@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sebuah halaman spesial untuk orang yang paling spesial di hatiku 💕">
+    <title>💕 Untuk Kamu yang Spesial 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============ LANDING PAGE ============ -->
+    <section id="landing" class="landing-page">
+        <!-- Floating particles container -->
+        <div id="particles-landing" class="particles-container"></div>
+        
+        <!-- Floating flowers decoration -->
+        <div class="floating-decor flower-1">🌸</div>
+        <div class="floating-decor flower-2">🌺</div>
+        <div class="floating-decor flower-3">🌷</div>
+        <div class="floating-decor flower-4">💐</div>
+        <div class="floating-decor flower-5">🌹</div>
+        <div class="floating-decor heart-1">💖</div>
+        <div class="floating-decor heart-2">💗</div>
+        <div class="floating-decor heart-3">💕</div>
+        <div class="floating-decor heart-4">💝</div>
+        <div class="floating-decor heart-5">❤️</div>
+        <div class="floating-decor sparkle-1">✨</div>
+        <div class="floating-decor sparkle-2">🦋</div>
+        <div class="floating-decor sparkle-3">⭐</div>
+
+        <div class="landing-content">
+            <div class="envelope-icon" id="envelope">
+                <div class="envelope-body">💌</div>
+            </div>
+            <h1 class="landing-title">
+                <span class="title-line-1">Hai Sayangku</span>
+                <span class="title-heart">💕</span>
+                <span class="title-line-2">Ada sesuatu untukmu...</span>
+            </h1>
+            <p class="landing-subtitle">Tekan tombol di bawah untuk membuka surprise spesial dari aku 🥰</p>
+            <button id="openBtn" class="magic-button" onclick="openSurprise()">
+                <span class="btn-sparkle btn-sparkle-1">✨</span>
+                <span class="btn-sparkle btn-sparkle-2">💖</span>
+                <span class="btn-text">Buka Untukmu 💝</span>
+                <span class="btn-sparkle btn-sparkle-3">✨</span>
+                <span class="btn-sparkle btn-sparkle-4">💖</span>
+                <div class="btn-glow"></div>
+            </button>
+            <div class="landing-flowers">
+                <img src="assets/img/flowers.png" alt="Bunga" class="landing-flower-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <section id="mainContent" class="main-content hidden">
+        <!-- Floating particles for main content -->
+        <div id="particles-main" class="particles-container"></div>
+
+        <!-- Header -->
+        <header class="content-header">
+            <div class="header-hearts">
+                <span>💖</span><span>💗</span><span>💕</span><span>💖</span><span>💗</span>
+            </div>
+            <h1 class="content-title">Untuk Kamu, Cintaku 💕</h1>
+            <p class="content-subtitle">Setiap momen bersamamu adalah hadiah terindah dalam hidupku</p>
+            <div class="header-divider">
+                <span>🌸</span>
+                <div class="divider-line"></div>
+                <span>💖</span>
+                <div class="divider-line"></div>
+                <span>🌸</span>
+            </div>
+        </header>
+
+        <!-- Photo Gallery with Messages -->
+        <div class="gallery-container">
+            
+            <!-- Card 1 -->
+            <div class="photo-card card-1" data-aos="fade-up">
+                <div class="card-decoration card-deco-left">🌸</div>
+                <div class="card-decoration card-deco-right">🌺</div>
+                <div class="photo-wrapper">
+                    <img src="assets/img/couple.png" alt="Foto 1" class="photo-img">
+                    <div class="photo-overlay">
+                        <span>💕</span>
+                    </div>
+                </div>
+                <div class="card-message">
+                    <div class="msg-icon">🌹</div>
+                    <p class="msg-text">"Kamu adalah alasan kenapa aku selalu tersenyum setiap pagi. Terima kasih sudah menjadi cahaya dalam hidupku, sayang."</p>
+                    <div class="msg-hearts">💕💕💕</div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="photo-card card-2" data-aos="fade-up">
+                <div class="card-decoration card-deco-left">💐</div>
+                <div class="card-decoration card-deco-right">🌷</div>
+                <div class="photo-wrapper">
+                    <img src="assets/img/cherry_blossom.png" alt="Foto 2" class="photo-img">
+                    <div class="photo-overlay">
+                        <span>🌸</span>
+                    </div>
+                </div>
+                <div class="card-message">
+                    <div class="msg-icon">🌷</div>
+                    <p class="msg-text">"Setiap hari bersamamu terasa seperti musim semi yang tak pernah berakhir. Kamu secantik bunga sakura yang bermekaran."</p>
+                    <div class="msg-hearts">🌸🌸🌸</div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="photo-card card-3" data-aos="fade-up">
+                <div class="card-decoration card-deco-left">🌹</div>
+                <div class="card-decoration card-deco-right">💖</div>
+                <div class="photo-wrapper">
+                    <img src="assets/img/sunset.png" alt="Foto 3" class="photo-img">
+                    <div class="photo-overlay">
+                        <span>🌅</span>
+                    </div>
+                </div>
+                <div class="card-message">
+                    <div class="msg-icon">💝</div>
+                    <p class="msg-text">"Seperti sunset yang selalu indah, cintaku padamu tidak akan pernah pudar. Kamu segalanya untukku, sekarang dan selamanya."</p>
+                    <div class="msg-hearts">💖💖💖</div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="photo-card card-4" data-aos="fade-up">
+                <div class="card-decoration card-deco-left">✨</div>
+                <div class="card-decoration card-deco-right">🌟</div>
+                <div class="photo-wrapper">
+                    <img src="assets/img/stars_night.png" alt="Foto 4" class="photo-img">
+                    <div class="photo-overlay">
+                        <span>⭐</span>
+                    </div>
+                </div>
+                <div class="card-message">
+                    <div class="msg-icon">✨</div>
+                    <p class="msg-text">"Di antara jutaan bintang di langit, kamu adalah bintang paling terang yang menerangi gelapnya malamku. I love you to the moon and back!"</p>
+                    <div class="msg-hearts">⭐✨⭐</div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="photo-card card-5" data-aos="fade-up">
+                <div class="card-decoration card-deco-left">💌</div>
+                <div class="card-decoration card-deco-right">💕</div>
+                <div class="photo-wrapper">
+                    <img src="assets/img/love_letter.png" alt="Foto 5" class="photo-img">
+                    <div class="photo-overlay">
+                        <span>💌</span>
+                    </div>
+                </div>
+                <div class="card-message">
+                    <div class="msg-icon">💌</div>
+                    <p class="msg-text">"Kalau aku bisa menulis surat cinta setiap hari, semua isinya akan sama: Aku bersyukur memilikimu. Kamu adalah hadiah terbaik dari Tuhan."</p>
+                    <div class="msg-hearts">💕💕💕</div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="photo-card card-6" data-aos="fade-up">
+                <div class="card-decoration card-deco-left">🌺</div>
+                <div class="card-decoration card-deco-right">🌸</div>
+                <div class="photo-wrapper">
+                    <img src="assets/img/flowers.png" alt="Foto 6" class="photo-img">
+                    <div class="photo-overlay">
+                        <span>🌺</span>
+                    </div>
+                </div>
+                <div class="card-message">
+                    <div class="msg-icon">🌹</div>
+                    <p class="msg-text">"Seribu mawar pun tak akan cukup untuk menggambarkan betapa cantiknya kamu di mataku. Kamu lebih indah dari bunga manapun di dunia ini."</p>
+                    <div class="msg-hearts">🌹🌹🌹</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Message Section -->
+        <div class="special-section">
+            <div class="special-decoration">
+                <span class="special-flower sf-1">🌸</span>
+                <span class="special-flower sf-2">🌺</span>
+                <span class="special-flower sf-3">🌷</span>
+                <span class="special-flower sf-4">💐</span>
+                <span class="special-flower sf-5">🌹</span>
+                <span class="special-heart sh-1">💖</span>
+                <span class="special-heart sh-2">💗</span>
+                <span class="special-heart sh-3">💕</span>
+            </div>
+            <div class="special-card">
+                <div class="special-border">
+                    <span class="corner-deco corner-tl">🌸</span>
+                    <span class="corner-deco corner-tr">🌺</span>
+                    <span class="corner-deco corner-bl">🌷</span>
+                    <span class="corner-deco corner-br">💐</span>
+                </div>
+                <h2 class="special-title">Pesan Spesial Untukmu 💝</h2>
+                <div class="special-divider">
+                    <span>🌹</span><span>💕</span><span>🌹</span>
+                </div>
+                <p class="special-text">
+                    Sayangku, aku mungkin tidak sempurna, tapi satu hal yang pasti: 
+                    <strong>aku mencintaimu dengan sepenuh hatiku.</strong>
+                </p>
+                <p class="special-text">
+                    Setiap hari bersamamu adalah hari terbaik dalam hidupku. 
+                    Tawamu adalah musik favoritku, senyummu adalah pemandangan terindah yang pernah aku lihat.
+                </p>
+                <p class="special-text">
+                    Terima kasih sudah selalu ada, sudah selalu sabar, dan sudah selalu menjadi kamu. 
+                    <strong>Kamu adalah rumahku, kamu adalah duniaku. 🌍💕</strong>
+                </p>
+                <p class="special-signature">
+                    Dengan cinta yang tak terhingga,<br>
+                    <span class="signature-name">Dari Seseorang yang Sangat Mencintaimu 💕</span>
+                </p>
+                <div class="special-emoji-row">
+                    💖🌸💕🌺💗🌷💝🌹💘
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="love-footer">
+            <div class="footer-hearts">
+                <span>💕</span><span>🌸</span><span>💖</span><span>🌺</span><span>💗</span>
+            </div>
+            <p class="footer-text">Made with 💕 just for you</p>
+            <p class="footer-date" id="footerDate"></p>
+            <div class="footer-flowers">
+                <span>🌸</span><span>🌺</span><span>🌷</span><span>💐</span><span>🌹</span>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Background Music Toggle -->
+    <button id="musicToggle" class="music-toggle" onclick="toggleMusic()" title="Toggle Musik">
+        <span class="music-icon">🎵</span>
+    </button>
+
+    <audio id="bgMusic" loop>
+        <!-- User can add their own music file here -->
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
